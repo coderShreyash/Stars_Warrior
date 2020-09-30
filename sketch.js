@@ -20,13 +20,12 @@ function preload(){
   ninja = loadImage("ninja.png")
 }
 function setup() {
- w = displayWidth;
- h = displayHeight;
+ w = windowWidth;
+ h = windowHeight;
   createCanvas(w,h-h/7.5789);
-  console.log(displayWidth,displayHeight)
   engine = Engine.create();
   world = engine.world;
-  bob1 = new BobClass(displayWidth/7.68,h/3.456,w/21.94285714285714,h/12.34285714285714,90);
+  bob1 = new BobClass(w/7.68,h/3.456,w/21.94285714285714,h/12.34285714285714,90);
 ground1 = new Ground(w/2,h/1.728,w-10,h/17.28);
 ground2 = new Ground(w/7.68,h/2.468571428571429,w/10.24,h/43.2);
 ground3 = new Ground(w/2.194285714285714,h/4.32,w/6.144,h/34.56);
